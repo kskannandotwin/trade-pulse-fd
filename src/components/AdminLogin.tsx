@@ -43,11 +43,13 @@ const AdminLogin = () => {
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="max-w-md w-full space-y-8 bg-white p-10 rounded-xl shadow-lg">
         <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Admin Login
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-green-600">
+            Shree Naturals
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
-            Sign in to access the Trade Pulse Admin Dashboard
+            Sign in to access the{" "}
+            <span className="font-bold text-blue-600">Trade Pulse</span> Admin
+            Dashboard
           </p>
         </div>
 
