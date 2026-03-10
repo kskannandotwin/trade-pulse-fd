@@ -10,6 +10,7 @@ import AdminDashboard from "./components/AdminDashboard";
 import Products from "./components/Products";
 import Customers from "./components/Customers";
 import Orders from "./components/Orders";
+import Sales from "./components/Sales";
 import "./App.css";
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
@@ -53,6 +54,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <Orders />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/sales"
+            element={
+              <ProtectedRoute>
+                <Sales />
               </ProtectedRoute>
             }
           />

@@ -41,6 +41,12 @@ const AdminDashboard = () => {
           >
             Orders
           </Link>
+          <Link
+            to="/admin/sales"
+            className="block text-indigo-600 hover:text-indigo-800 font-medium"
+          >
+            Sales
+          </Link>
         </div>
         <button
           onClick={handleLogout}
