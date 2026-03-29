@@ -12,6 +12,7 @@ import Customers from "./components/Customers";
 import Orders from "./components/Orders";
 import Sales from "./components/Sales";
 import "./App.css";
+import ProductRawMaterials from "./components/ProductRawMaterials";
 
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
   const { isAuthenticated } = useAuth();
@@ -38,6 +39,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <Products />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/products/:id/raw-materials"
+            element={
+              <ProtectedRoute>
+                <ProductRawMaterials />
               </ProtectedRoute>
             }
           />

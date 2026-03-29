@@ -272,7 +272,9 @@ const Products = () => {
                       products.map((product) => (
                         <tr key={product.id}>
                           <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                            {product.name}
+                            <Link to={`/admin/products/${product.id}/raw-materials`} className="text-indigo-600 hover:text-indigo-900 underline">
+                              {product.name}
+                            </Link>
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                             {product.category}
