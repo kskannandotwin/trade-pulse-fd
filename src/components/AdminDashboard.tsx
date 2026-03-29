@@ -30,6 +30,12 @@ const AdminDashboard = () => {
             Products
           </Link>
           <Link
+            to="/admin/sellers"
+            className="block text-indigo-600 hover:text-indigo-800 font-medium"
+          >
+            Sellers (Vendors)
+          </Link>
+          <Link
             to="/admin/customers"
             className="block text-indigo-600 hover:text-indigo-800 font-medium"
           >
